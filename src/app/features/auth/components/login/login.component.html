@@ -1,0 +1,19 @@
+<div class="login min-h-screen flex items-center justify-center">
+  <form class="
+    bg-white flex flex-col gap-[10px] items-center px-[20px] py-[32px] [&>.sso]:w-[225px]
+    [&>.sso]:flex [&>.sso]:flex [&>.sso]:gap-[6px] [&>.sso]:px-[12px] [&>.sso]:p-[8px]
+    [&>.sso]:shadow-[0px_4px_4px_rgba(0,0,0,0.25)] [&>.sso]:rounded-full
+    [&>.sso>.sso-icon]:h-[24px] [&>.sso>.sso-icon]:w-[24px]
+    [&>.sso>.sso-name]:text-[16px] [&>.sso>.sso-name]:leading-[20px]:
+">
+    <a class="sso" [href]="googleSSOEndpoint">
+      <img class="sso-icon" src="/assets/brands/google.svg" alt="google icon">
+      <span class="sso-name">Sign in with Google</span>
+    </a>
+    <span>Or</span>
+    <a class="sso" [href]="facebookSSOEndpoint">
+      <img class="sso-icon" src="/assets/brands/facebook.svg" alt="facebook icon">
+      <span class="sso-name">Sign in with Facebook</span>
+    </a>
+  </form>
+</div>
