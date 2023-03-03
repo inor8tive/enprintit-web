@@ -26,6 +26,7 @@ export class SSOVerifyComponent implements OnInit {
         this._sso.verify(provider, otherParams)
           .subscribe((token: ITokenResponse) => {
             this._token.persist(token);
+            this.goToDashboard();
           }, (error: HttpErrorResponse) => {
             console.log(error);
             this.goToDashboard();
